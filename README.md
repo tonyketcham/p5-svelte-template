@@ -2,7 +2,9 @@
 
 ---
 
-# p5 svelte app 👋👋🏿👋🏽👋🏻👋🏾👋🏼
+# p5.js Svelte App
+
+Yes hi good! 👋👋🏿👋🏽👋🏻👋🏾👋🏼
 
 This is a fun project template for creating a [p5.js](https://p5js.org/) sketch in [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
 

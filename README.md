@@ -1,6 +1,6 @@
 # p5.js Svelte App
 
-Yes hi good! 👋👋🏿👋🏽👋🏻👋🏾👋🏼 
+Ok hi! 👋👋🏿👋🏽👋🏻👋🏾👋🏼 
 
 This is a fun project template for creating a [p5.js](https://p5js.org/) sketch in [Svelte](https://svelte.dev) apps. It lives at https://github.com/tonyketcham/p5-svelte as a fork of the official svelte template https://github.com/sveltejs/template.
 
@@ -36,6 +36,43 @@ Navigate to [localhost:5000](http://localhost:5000). You should see your app run
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
 
+## p5.js instance mode
+
+Since Svelte doesn't allow us to globally expose the p5 library, we must instead do some trickery and use p5's [instance mode](https://github.com/processing/p5.js/wiki/Global-and-instance-mode):
+
+```js
+import p5 from "p5";
+
+export default function sketch(node) {
+  new p5((instance) => workspace(instance), node);
+}
+
+/**
+ * The main method
+ *
+ * @param {p5} p5 sketch instance, scoped where many may exist on the same page
+ */
+const workspace = (p5) => {
+  let x = 100;
+  let y = 100;
+
+  p5.setup = () => {
+    p5.createCanvas(400, 400);
+  };
+
+  p5.draw = () => {
+    p5.background(0);
+    // p5.fill(255);
+    if (p5.mouseIsPressed) {
+      p5.fill(255);
+    } else {
+      p5.fill(0);
+    }
+    p5.ellipse(p5.mouseX, p5.mouseY, 50, 50);
+  };
+};
+```
+This has the benefit of allowing multiple sketches per page with seperation of concerns.
 
 ## Building and running in production mode
 

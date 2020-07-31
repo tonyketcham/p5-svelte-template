@@ -2,10 +2,9 @@
 
 Ok hi! 👋👋🏿👋🏽👋🏻👋🏾👋🏼 
 
-This is a fun project template for creating a [p5.js](https://p5js.org/) sketch in [Svelte](https://svelte.dev) apps. It lives at https://github.com/tonyketcham/p5-svelte as a fork of the official svelte template https://github.com/sveltejs/template.
+This is a project skeleton for creating a [p5.js](https://p5js.org/) sketch in a [Svelte](https://svelte.dev) app.
 
 ![p5-Svelte logo](https://raw.githubusercontent.com/tonyketcham/p5-svelte/nice/screely-1596168950501.png)
-
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
@@ -140,3 +139,5 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+---
+This project is a fork of the [official Svelte template](https://github.com/sveltejs/template).

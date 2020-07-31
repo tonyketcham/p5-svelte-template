@@ -4,7 +4,7 @@ Ok hi! 👋👋🏿👋🏽👋🏻👋🏾👋🏼
 
 This is a project skeleton for creating a [p5.js](https://p5js.org/) sketch in a [Svelte](https://svelte.dev) app.
 
-![p5-Svelte logo](https://raw.githubusercontent.com/tonyketcham/p5-svelte/nice/screely-1596168950501.png)
+![p5-Svelte logo](https://raw.githubusercontent.com/tonyketcham/p5-svelte/nice/screely-1596170721775.png)
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 

@@ -1,4 +1,4 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+![p5-Svelte logo](https://raw.githubusercontent.com/tonyketcham/p5-svelte/nice/p5-svelte%20mockup.png)
 
 ---
 

@@ -19,7 +19,7 @@ const workspace = (p5) => {
 
   p5.draw = () => {
     p5.background(0);
-    // p5.fill(255);
+
     if (p5.mouseIsPressed) {
       p5.fill(255);
     } else {

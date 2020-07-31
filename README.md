@@ -1,6 +1,6 @@
 # p5.js Svelte App
 
-Ok hi! 👋👋🏿👋🏽👋🏻👋🏾👋🏼 
+Ok hi! 👋👋🏿👋🏽👋🏻👋🏾👋🏼
 
 This is a project skeleton for creating a [p5.js](https://p5js.org/) sketch in a [Svelte](https://svelte.dev) app.
 
@@ -13,8 +13,7 @@ npx degit tonyketcham/p5-svelte p5-svelte-app
 cd svelte-app
 ```
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
+_Note that you will need to have [Node.js](https://nodejs.org) installed._
 
 ## Get started
 
@@ -61,7 +60,7 @@ const workspace = (p5) => {
 
   p5.draw = () => {
     p5.background(0);
-    // p5.fill(255);
+
     if (p5.mouseIsPressed) {
       p5.fill(255);
     } else {
@@ -71,6 +70,7 @@ const workspace = (p5) => {
   };
 };
 ```
+
 This has the benefit of allowing multiple sketches per page with seperation of concerns.
 
 ## Building and running in production mode
@@ -83,12 +83,11 @@ npm run build
 
 You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
 
-
 ## Single-page app mode
 
 By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
 
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
+If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for _any_ path. You can make it so by editing the `"start"` command in package.json:
 
 ```js
 "start": "sirv public --single"
@@ -139,5 +138,7 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+
 ---
+
 This project is a fork of the [official Svelte template](https://github.com/sveltejs/template).
